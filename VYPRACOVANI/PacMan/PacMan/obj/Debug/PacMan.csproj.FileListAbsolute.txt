@@ -1,0 +1,28 @@
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\bin\Debug\PacMan.exe.config
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\bin\Debug\PacMan.exe
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\bin\Debug\PacMan.pdb
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\PacMan.csprojResolveAssemblyReference.cache
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\MainWindow.g.cs
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\App.g.cs
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\PacMan_MarkupCompile.cache
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\PacMan_MarkupCompile.lref
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\MainWindow.baml
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\PacMan.g.resources
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\PacMan.Properties.Resources.resources
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\PacMan.csproj.GenerateResource.Cache
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\PacMan.exe
+c:\users\tekusp\documents\visual studio 2017\Projects\PacMan\PacMan\obj\Debug\PacMan.pdb
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\bin\Debug\PacMan.exe.config
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\bin\Debug\PacMan.exe
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\bin\Debug\PacMan.pdb
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\PacMan.csprojResolveAssemblyReference.cache
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\MainWindow.g.cs
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\App.g.cs
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\PacMan_MarkupCompile.cache
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\PacMan_MarkupCompile.lref
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\MainWindow.baml
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\PacMan.g.resources
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\PacMan.Properties.Resources.resources
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\PacMan.csproj.GenerateResource.Cache
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\PacMan.exe
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\PacMan\PacMan\obj\Debug\PacMan.pdb

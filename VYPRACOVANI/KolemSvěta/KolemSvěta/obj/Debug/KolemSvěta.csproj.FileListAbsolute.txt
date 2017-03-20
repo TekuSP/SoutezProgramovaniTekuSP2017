@@ -1,0 +1,18 @@
+c:\users\tekusp\documents\visual studio 2017\Projects\KolemSvěta\KolemSvěta\bin\Debug\KolemSvěta.exe.config
+c:\users\tekusp\documents\visual studio 2017\Projects\KolemSvěta\KolemSvěta\bin\Debug\KolemSvěta.exe
+c:\users\tekusp\documents\visual studio 2017\Projects\KolemSvěta\KolemSvěta\bin\Debug\KolemSvěta.pdb
+c:\users\tekusp\documents\visual studio 2017\Projects\KolemSvěta\KolemSvěta\bin\Debug\temtekDLLv2.dll
+c:\users\tekusp\documents\visual studio 2017\Projects\KolemSvěta\KolemSvěta\bin\Debug\temtekDLLv2.pdb
+c:\users\tekusp\documents\visual studio 2017\Projects\KolemSvěta\KolemSvěta\bin\Debug\temtekDLLv2.xml
+c:\users\tekusp\documents\visual studio 2017\Projects\KolemSvěta\KolemSvěta\obj\Debug\KolemSvěta.csprojResolveAssemblyReference.cache
+c:\users\tekusp\documents\visual studio 2017\Projects\KolemSvěta\KolemSvěta\obj\Debug\KolemSvěta.exe
+c:\users\tekusp\documents\visual studio 2017\Projects\KolemSvěta\KolemSvěta\obj\Debug\KolemSvěta.pdb
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\KolemSvěta\KolemSvěta\obj\Debug\KolemSvěta.csprojResolveAssemblyReference.cache
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\KolemSvěta\KolemSvěta\obj\Debug\KolemSvěta.exe
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\KolemSvěta\KolemSvěta\obj\Debug\KolemSvěta.pdb
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\KolemSvěta\KolemSvěta\bin\Debug\KolemSvěta.exe.config
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\KolemSvěta\KolemSvěta\bin\Debug\KolemSvěta.exe
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\KolemSvěta\KolemSvěta\bin\Debug\KolemSvěta.pdb
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\KolemSvěta\KolemSvěta\bin\Debug\temtekDLLv2.dll
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\KolemSvěta\KolemSvěta\bin\Debug\temtekDLLv2.pdb
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\KolemSvěta\KolemSvěta\bin\Debug\temtekDLLv2.xml

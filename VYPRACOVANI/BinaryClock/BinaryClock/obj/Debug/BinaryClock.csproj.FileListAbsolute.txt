@@ -1,0 +1,28 @@
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\bin\Debug\BinaryClock.exe.config
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\bin\Debug\BinaryClock.exe
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\bin\Debug\BinaryClock.pdb
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\BinaryClock.csprojResolveAssemblyReference.cache
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\MainWindow.g.cs
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\App.g.cs
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\BinaryClock_MarkupCompile.cache
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\BinaryClock_MarkupCompile.lref
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\MainWindow.baml
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\BinaryClock.g.resources
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\BinaryClock.Properties.Resources.resources
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\BinaryClock.csproj.GenerateResource.Cache
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\BinaryClock.exe
+c:\users\tekusp\documents\visual studio 2017\Projects\BinaryClock\BinaryClock\obj\Debug\BinaryClock.pdb
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\bin\Debug\BinaryClock.exe.config
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\bin\Debug\BinaryClock.exe
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\bin\Debug\BinaryClock.pdb
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\BinaryClock.csprojResolveAssemblyReference.cache
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\MainWindow.g.cs
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\App.g.cs
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\BinaryClock_MarkupCompile.cache
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\BinaryClock_MarkupCompile.lref
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\MainWindow.baml
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\BinaryClock.g.resources
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\BinaryClock.Properties.Resources.resources
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\BinaryClock.csproj.GenerateResource.Cache
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\BinaryClock.exe
+C:\Users\TekuSP\Desktop\zadani\VYPRACOVANI\BinaryClock\BinaryClock\obj\Debug\BinaryClock.pdb

@@ -1,0 +1,2122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>temtekDLLv2</name>
+    </assembly>
+    <members>
+        <member name="T:temTek.TemTekCollections.Stack`1">
+            <summary>
+            Last In First Out System
+            </summary>
+            <typeparam name="type"></typeparam>
+        </member>
+        <member name="F:temTek.TemTekCollections.Stack`1.ActualStack">
+            <summary>
+            Array from Stack
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekCollections.Stack`1.ActualPositionInStack">
+            <summary>
+            Positon in stack
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekCollections.Stack`1.StackContinue">
+            <summary>
+            Stack Continue?
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.#ctor">
+            <summary>
+            Constructor for Stack
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.#ctor(System.Int32)">
+            <summary>
+            Constructor with size of start Stack
+            </summary>
+            <param name="startSize">Size of Stack</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.Push(`0)">
+            <summary>
+            Puts item into Stack
+            </summary>
+            <param name="item">Item for inserting</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.Pop">
+            <summary>
+            Returns and removes item from stack
+            </summary>
+            <returns>Returns your item</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.Peek">
+            <summary>
+            Returns and NOT removes item from stack
+            </summary>
+            <returns>Shows your item</returns>
+        </member>
+        <member name="P:temTek.TemTekCollections.Stack`1.Count">
+            <summary>
+            Returns Count of items in Stack
+            </summary>
+            <seealso cref="P:temTek.TemTekCollections.Stack`1.CountLong">Count in Int64</seealso>
+        </member>
+        <member name="P:temTek.TemTekCollections.Stack`1.CountLong">
+            <summary>
+            Returns Count of items in Stack, but in LONG
+            </summary>
+            <seealso cref="P:temTek.TemTekCollections.Stack`1.Count">Count in Int32</seealso>
+        </member>
+        <member name="P:temTek.TemTekCollections.Stack`1.Size">
+            <summary>
+            Returns size of hidden array => Can be empty or null
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.Contains(`0)">
+            <summary>
+            Searches if contains some item
+            </summary>
+            <param name="item">Item of same type as Stack</param>
+            <returns>Returns true if contains</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.ToArray">
+            <summary>
+            Returns array of your type
+            </summary>
+            <returns>Array of your type</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.Clear">
+            <summary>
+            Clears Stack
+            </summary>
+            <seealso cref="M:temTek.TemTekCollections.Stack`1.TrimExcess">Its good to remove empty or null values before creating array</seealso>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.TrimExcess">
+            <summary>
+            Removes empty values
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.Stack`1.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
+            </returns>
+            <filterpriority>1</filterpriority>
+        </member>
+        <member name="T:temTek.TemTekCollections.Queue`1">
+            <summary>
+            First In Fist Out System => Like Tesco Pokladna
+            </summary>
+            <typeparam name="type"></typeparam>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.#ctor">
+            <summary>
+            Creates constructor of Queue
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.#ctor(System.Int32)">
+            <summary>
+            Creates constructor of Queue with start size
+            </summary>
+            <param name="startSize">Size of starting Queue</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.Enqueue(`0)">
+            <summary>
+            Puts item in Queue
+            </summary>
+            <param name="item">Item to put in</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.Dequeue">
+            <summary>
+            Returns item from Queue and removes it
+            </summary>
+            <returns>Returns item</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.Peek">
+            <summary>
+            Returns item from Queue and NOT removes it
+            </summary>
+            <returns>Shows you item</returns>
+        </member>
+        <member name="P:temTek.TemTekCollections.Queue`1.Count">
+            <summary>
+            Returns Count of items in Queue
+            </summary>
+            <seealso cref="P:temTek.TemTekCollections.Queue`1.LongCount">Returns Count of items in Queue in Int64</seealso>
+        </member>
+        <member name="P:temTek.TemTekCollections.Queue`1.LongCount">
+            <summary>
+            Returns Count of items in Queue in LONG
+            </summary>
+            <seealso cref="P:temTek.TemTekCollections.Queue`1.Count">Returns Count of items in Queue in Int32</seealso>
+        </member>
+        <member name="P:temTek.TemTekCollections.Queue`1.Size">
+            <summary>
+            Returns size of Array => Can contain null or empty values
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.Contains(`0)">
+            <summary>
+            Returns bool if Queue contains item
+            </summary>
+            <param name="item">Item to search for</param>
+            <returns>True if success</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.ToArray">
+            <summary>
+            Returns Array of your type
+            </summary>
+            <returns>Array of type</returns>
+            <seealso cref="M:temTek.TemTekCollections.Queue`1.TrimExcess">Its better to remove null and empty values before calling ToArray</seealso>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.Clear">
+            <summary>
+            Removes all items from Queue
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.TrimExcess">
+            <summary>
+            Removes null and empty values from Queue
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.Queue`1.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
+            </returns>
+            <filterpriority>1</filterpriority>
+        </member>
+        <member name="T:temTek.TemTekCollections.Dictionary`2">
+            <summary>
+            Key and Value system
+            </summary>
+            <typeparam name="keyType"></typeparam>
+            <typeparam name="valueType"></typeparam>
+        </member>
+        <member name="M:temTek.TemTekCollections.Dictionary`2.#ctor">
+            <summary>
+            Creates constructor of Dictionary
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.Dictionary`2.Add(`0,`1)">
+            <summary>
+            Adds item and value into Dictionary
+            </summary>
+            <param name="key">Your key to add => Must be unique</param>
+            <param name="value">Your value to add</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.Dictionary`2.Add(`0,`1,System.Boolean)">
+            <summary>
+            Adds item and value into Dictionary
+            </summary>
+            <param name="key">Your key to add => Must be unique</param>
+            <param name="value">Your value to add</param>
+            <param name="removeIfContains">Remove key from Dictionary if is existing?</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.Dictionary`2.ContainsKey(`0)">
+            <summary>
+            Searches for key
+            </summary>
+            <param name="key">Key for search</param>
+            <returns>True if found</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.Dictionary`2.ContainsValue(`1)">
+            <summary>
+            Searches for Value
+            </summary>
+            <param name="value">Value for search</param>
+            <returns>True if found</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.Dictionary`2.ContainsValuesTimes(`1)">
+            <summary>
+            Searches for Value
+            </summary>
+            <param name="value">Value for search</param>
+            <returns>Returns count of times its in Dictionary</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.Dictionary`2.Remove(`0)">
+            <summary>
+            Removes item from Dictionary
+            </summary>
+            <param name="key">Key to remove</param>
+            <returns>True if success, false if key wasn't found</returns>
+        </member>
+        <member name="P:temTek.TemTekCollections.Dictionary`2.Item(`0)">
+            <summary>
+            Indexer
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekCollections.Dictionary`2.Keys">
+            <summary>
+            Returns array of keys
+            </summary>
+            <seealso cref="P:temTek.TemTekCollections.Dictionary`2.Values">For returning values</seealso> 
+        </member>
+        <member name="P:temTek.TemTekCollections.Dictionary`2.Values">
+            <summary>
+            Returns array of values
+            </summary>
+            <seealso cref="P:temTek.TemTekCollections.Dictionary`2.Keys">For returning keys</seealso>
+        </member>
+        <member name="M:temTek.TemTekCollections.Dictionary`2.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
+            </returns>
+            <filterpriority>1</filterpriority>
+        </member>
+        <member name="T:temTek.TemTekCollections.List`1">
+            <summary>
+            Dynamic Array
+            </summary>
+            <typeparam name="type"></typeparam>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.#ctor">
+            <summary>
+            Intilializes Dynamic Array => List
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.#ctor(System.Int32)">
+            <summary>
+            Intilializes Dynamic Array with StartSize => List
+            </summary>
+            <param name="startSize">StartSize of List</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.#ctor(temTek.TemTekCollections.List{`0})">
+            <summary>
+            Intilializes Dynamic Array with Array => List
+            </summary>
+            <param name="input">Array for putting into List</param>
+        </member>
+        <member name="P:temTek.TemTekCollections.List`1.Count">
+            <summary>
+            Returns size of array
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.Clear">
+            <summary>
+            Clears array
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.
+            </returns>
+            <filterpriority>1</filterpriority>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.Add(`0)">
+            <summary>
+            Adds item into Array
+            </summary>
+            <param name="item">Item to add</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.Contains(`0)">
+            <summary>
+            Searches for item in array
+            </summary>
+            <param name="item">Item for searching</param>
+            <returns>True if contains</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.ContainsTimes(`0)">
+            <summary>
+            Searches for item in array
+            </summary>
+            <param name="item">Item for searching</param>
+            <returns>Returns how many times is item in array</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.Remove(`0)">
+            <summary>
+            Removes item from array
+            </summary>
+            <param name="item">Item to remove</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.Remove(System.Int32)">
+            <summary>
+            Removes item from array
+            </summary>
+            <param name="index">Index for removing</param>
+        </member>
+        <member name="P:temTek.TemTekCollections.List`1.Item(System.Int32)">
+            <summary>
+            Indexer
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.SortAscending">
+            <summary>
+            Sorts array ascending
+            </summary>
+            <seealso cref="M:temTek.TemTekCollections.List`1.SortDescending">For sorting Descending</seealso>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.SortDescending">
+            <summary>
+            Sorts array descending
+            </summary>
+            <seealso cref="M:temTek.TemTekCollections.List`1.SortAscending">For sorting Ascending</seealso>
+        </member>
+        <member name="M:temTek.TemTekCollections.List`1.IndexOf(`0)">
+            <summary>
+            Returns index of item
+            </summary>
+            <param name="item">Item for search</param>
+            <returns>Returns position of item in array</returns>
+        </member>
+        <member name="P:temTek.TemTekCollections.List`1.ToArray">
+            <summary>
+            Returns Array
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekCollections.KeyValuePair`2">
+            <summary>
+            Key and Value
+            </summary>
+            <typeparam name="keyType"></typeparam>
+            <typeparam name="ValueType"></typeparam>
+        </member>
+        <member name="P:temTek.TemTekCollections.KeyValuePair`2.Key">
+            <summary>
+            Sets or Gets Key
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekCollections.KeyValuePair`2.Value">
+            <summary>
+            Sets or Gets Value
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.KeyValuePair`2.#ctor(`0,`1)">
+            <summary>
+            Intializes Key and Value
+            </summary>
+            <param name="k">Key to add</param>
+            <param name="v">Value to add</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.KeyValuePair`2.ToString">
+            <summary>
+            Returns string
+            </summary>
+            <returns>Returns in this format: Key: key|Value: value</returns>
+        </member>
+        <member name="T:temTek.TemTekCollections.RandomStack`1">
+            <summary>
+            Last In Random Out System
+            </summary>
+            <typeparam name="type"></typeparam>
+        </member>
+        <member name="M:temTek.TemTekCollections.RandomStack`1.Peek">
+            <summary>
+            Shows item on random index
+            </summary>
+            <returns>Returns item</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.RandomStack`1.Pop">
+            <summary>
+            Removes and returns item on random index
+            </summary>
+            <returns>Returns item</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.RandomStack`1.Push(`0)">
+            <summary>
+            Puts item into Random Stack
+            </summary>
+            <param name="item">Item to put in</param>
+        </member>
+        <member name="T:temTek.TemTekCollections.LinkedList`1">
+            <summary>
+            Slower List
+            </summary>
+            <typeparam name="type"></typeparam>
+        </member>
+        <member name="P:temTek.TemTekCollections.LinkedList`1.Count">
+            <summary>
+            Returns Count of Nodes
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.LinkedList`1.AddLast(`0)">
+            <summary>
+            Adds item after Last Node
+            </summary>
+            <param name="item">Item to add</param>
+        </member>
+        <member name="P:temTek.TemTekCollections.LinkedList`1.Item(System.Int32)">
+            <summary>
+            Indexer
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekCollections.LinkedListNode`1">
+            <summary>
+            Node for Slower List
+            </summary>
+            <typeparam name="type"></typeparam>
+        </member>
+        <member name="M:temTek.TemTekCollections.LinkedListNode`1.GetLenght(System.Int32)">
+            <summary>
+            Returns lenght of Node
+            </summary>
+            <param name="number">Index of return</param>
+            <returns>Returns lenght</returns>
+        </member>
+        <member name="F:temTek.TemTekCollections.LinkedListNode`1.value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekCollections.LinkedListNode`1.AddLast(`0)">
+            <summary>
+            Adds item into last node
+            </summary>
+            <param name="item">Item to add</param>
+        </member>
+        <member name="M:temTek.TemTekCollections.LinkedListNode`1.RetrieveValue(System.Int32)">
+            <summary>
+            Returns value of node
+            </summary>
+            <param name="index">Index of return</param>
+            <returns>Item</returns>
+        </member>
+        <member name="M:temTek.TemTekCollections.LinkedListNode`1.SetValue(System.Int32,`0)">
+            <summary>
+            Sets value of node
+            </summary>
+            <param name="index">Index of set</param>
+            <param name="item">Item to set</param>
+        </member>
+        <member name="T:temTek.TemTekConsoleGraphics.ConsoleListBox">
+            <summary>
+            Creates ListBox in Console
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ConsoleListBox.GenerateListBox(System.String[],System.String,System.String,System.ConsoleColor,System.ConsoleColor,System.ConsoleColor,System.ConsoleColor)">
+            <summary>
+            Generates ListBox
+            </summary>
+            <param name="input">Item in ListBox</param>
+            <param name="text">Title text</param>
+            <param name="exitTextinStringFormat">Text when something is choosen. Use string format, like: Returned value is {0} </param>
+            <param name="backgroundOfListbox">Background color of box</param>
+            <param name="foregroundOfListbox">Foreground color of box</param>
+            <param name="background">Background of Console</param>
+            <param name="foreground">Foreground of Console</param>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ConsoleListBox.ChooseListBoxItem(System.String[],System.Int32,System.Int32,System.ConsoleColor,System.ConsoleColor)">
+            <summary>
+            
+            </summary>
+            <param name="items"></param>
+            <param name="ucol"></param>
+            <param name="urow"></param>
+            <param name="back"></param>
+            <param name="fore"></param>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ConsoleListBox.DrawBox(System.Int32,System.Int32,System.Int32,System.Int32,System.ConsoleColor,System.ConsoleColor,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="ucol"></param>
+            <param name="urow"></param>
+            <param name="lcol"></param>
+            <param name="lrow"></param>
+            <param name="back"></param>
+            <param name="fore"></param>
+            <param name="fill"></param>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ConsoleListBox.WriteColorString(System.String,System.Int32,System.Int32,System.ConsoleColor,System.ConsoleColor)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <param name="col"></param>
+            <param name="row"></param>
+            <param name="back"></param>
+            <param name="fore"></param>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ConsoleListBox.SetColors(System.ConsoleColor,System.ConsoleColor)">
+            <summary>
+            
+            </summary>
+            <param name="back"></param>
+            <param name="fore"></param>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ConsoleListBox.CleanUp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekConsoleGraphics.ConsoleMenu">
+            <summary>
+            Creates Menu in Console
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ConsoleMenu.Menu(System.String[],System.String,System.ConsoleColor,System.ConsoleColor)">
+            <summary>
+            Creates Console Menu
+            </summary>
+            <param name="array">Array of Console options</param>
+            <param name="text">Title of menu</param>
+            <param name="TextColor">Color of text</param>
+            <param name="BracketColor">Color of bracket</param>
+            <returns>Choosen index => Indexing from 1</returns>
+        </member>
+        <member name="T:temTek.TemTekConsoleGraphics.ConsolePasswordInput">
+            <summary>
+            Creates Password input in Console (Warning - Unstable, still WIP)
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ConsolePasswordInput.PasswordInput">
+            <summary>
+            Password input with that cool *** thing
+            </summary>
+            <returns>Returns string of input</returns>
+        </member>
+        <member name="T:temTek.TemTekConsoleGraphics.DrawGraph">
+            <summary>
+            Creates Graph in Console
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.DrawGraph.#ctor(System.Int32[],System.Int32)">
+            <summary>
+            You give it values and how much from corner it may move
+            </summary>
+            <param name="input">Values</param>
+            <param name="middle">Size from corner</param>
+        </member>
+        <member name="T:temTek.TemTekConsoleGraphics.DrawBox">
+            <summary>
+            Creates BOX in Console
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.DrawBox.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.ConsoleColor,System.ConsoleColor,System.Boolean)">
+            <summary>
+            Creates box
+            </summary>
+            <param name="ucol"></param>
+            <param name="urow"></param>
+            <param name="lcol"></param>
+            <param name="lrow"></param>
+            <param name="back"></param>
+            <param name="fore"></param>
+            <param name="fill"></param>
+        </member>
+        <member name="T:temTek.TemTekConsoleGraphics.ProgressBar">
+            <summary>
+            Creates ProgresBar
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ProgressBar.GetHashCode">
+            <summary>
+            Get hashcode
+            </summary>
+            <returns>Returns hashcode</returns>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ProgressBar.#ctor(System.Char)">
+            <summary>
+            Progress bar creation
+            </summary>
+            <param name="charInProgressBar">Char in progresbar graphic</param>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ProgressBar.ChangeProgress(System.Int32)">
+            <summary>
+            Change progressBar value with percentage value
+            </summary>
+            <param name="actualProgressInPrecents">Value in percentages</param>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ProgressBar.RenderNext">
+            <summary>
+            Shows progressbar with next value => if 1 then next is 2
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ProgressBar.Clear">
+            <summary>
+            Clears progressBar
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ProgressBar.Close">
+            <summary>
+            Closes progressbar
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekConsoleGraphics.ProgressBar.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="T:temTek.Console">
+            <summary>
+            Console for writing into console window
+            </summary>
+        </member>
+        <member name="M:temTek.Console.Count">
+            <summary>
+            Returns how many chars are on screen
+            </summary>
+            <returns>Count of chars</returns>
+        </member>
+        <member name="M:temTek.Console.Write(System.Object)">
+            <summary>
+            Writes into Console stream
+            </summary>
+            <param name="input">Input to write</param>
+            <seealso cref="M:temTek.Console.WriteLine(System.Object)">Writes with new Line</seealso>
+            <seealso cref="M:temTek.Console.Write(System.String,System.Boolean,System.Object[])"/>
+        </member>
+        <member name="M:temTek.Console.WriteLine(System.Object)">
+            <summary>
+            Writes into Console stream with new line on end
+            </summary>
+            <param name="input">Input to write</param>
+            <seealso cref="M:temTek.Console.Write(System.Object)">Writes without new Line</seealso>
+            <seealso cref="M:temTek.Console.Write(System.String,System.Boolean,System.Object[])"/>
+        </member>
+        <member name="M:temTek.Console.Write(System.String,System.Boolean,System.Object[])">
+            <summary>
+            Write with String Format
+            </summary>
+            <param name="input">Input with {0} things</param>
+            <param name="Format">Format it?</param>
+            <param name="args">Args for formating</param>
+            <seealso cref="M:temTek.Console.Write(System.Object)"/>
+        </member>
+        <member name="M:temTek.Console.WriteLine(System.String,System.Boolean,System.Object[])">
+            <summary>
+            Writes on new Line with String Format
+            </summary>
+            <param name="input">Input with {0} things</param>
+            <param name="Format">Format it?</param>
+            <param name="args">Args for formating</param>
+            <seealso cref="M:temTek.Console.WriteLine(System.Object)"/>
+        </member>
+        <member name="M:temTek.Console.Clear">
+            <summary>
+            Clears screen
+            </summary>
+        </member>
+        <member name="M:temTek.Console.SaveScreen">
+            <summary>
+            Saves screen
+            </summary>
+            <returns>Returns id of saved screen</returns>
+        </member>
+        <member name="M:temTek.Console.ShowScreen(System.Int32)">
+            <summary>
+            Shows screen
+            </summary>
+            <param name="indexer">Requires id of saved screen</param>
+        </member>
+        <member name="M:temTek.Console.SetOut(System.IO.TextWriter)">
+            <summary>
+            Sets Output stream
+            </summary>
+            <param name="newOut"></param>
+        </member>
+        <member name="M:temTek.Console.Out">
+            <summary>
+            Gets Output stream
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.Console.SetIn(System.IO.TextReader)">
+            <summary>
+            Sets input stream
+            </summary>
+            <param name="newIn"></param>
+        </member>
+        <member name="M:temTek.Console.In">
+            <summary>
+            Gets input stream
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.Console.SetCursorPosition(System.Int32,System.Int32)">
+            <summary>
+            Sets cursor position
+            </summary>
+            <param name="left">From left</param>
+            <param name="top">From top</param>
+        </member>
+        <member name="M:temTek.Console.SetBackgroundColor(System.ConsoleColor)">
+            <summary>
+            Sets Background and reload screen with new color
+            </summary>
+            <param name="color">Color to set</param>
+        </member>
+        <member name="M:temTek.Console.SetForegroundColor(System.ConsoleColor)">
+            <summary>
+            Sets foreground color
+            </summary>
+            <param name="color">Color to set</param>
+        </member>
+        <member name="M:temTek.Console.ResetColor">
+            <summary>
+            Resets color to Windows Default
+            </summary>
+        </member>
+        <member name="M:temTek.Console.ReadKey(System.Boolean)">
+            <summary>
+            Reads key from screen
+            </summary>
+            <param name="intercept">May show pressed key?</param>
+            <returns>Returns keyInfo with key</returns>
+        </member>
+        <member name="M:temTek.Console.ReadLine">
+            <summary>
+            Reads Line from Console Stream
+            </summary>
+            <returns>Returns string</returns>
+        </member>
+        <member name="M:temTek.Console.Read">
+            <summary>
+            Reads next character from Stream
+            </summary>
+            <returns>Returns char as int</returns>
+        </member>
+        <member name="M:temTek.Console.BufferWidth(System.Int32)">
+            <summary>
+            Sets Buffer Width
+            </summary>
+            <param name="buffer">New Width</param>
+            <returns>Returns buffer Width</returns>
+        </member>
+        <member name="M:temTek.Console.Beep">
+            <summary>
+            Does beep sound
+            </summary>
+        </member>
+        <member name="M:temTek.Console.Beep(System.Int32,System.Int32)">
+            <summary>
+            Does beep sound with custom settings
+            </summary>
+            <param name="frequency">Frequency to beep</param>
+            <param name="duration">Time how long beep</param>
+        </member>
+        <member name="T:temTek.ConsoleWindow">
+            <summary>
+            Creates and works with Console window
+            </summary>
+        </member>
+        <member name="P:temTek.ConsoleWindow.HasConsole">
+            <summary>
+            Returns true if console is existing
+            </summary>
+        </member>
+        <member name="M:temTek.ConsoleWindow.Show">
+            <summary>
+            Creates a new console instance if the process is not attached to a console already.
+            </summary>
+        </member>
+        <member name="M:temTek.ConsoleWindow.Hide">
+            <summary>
+            If the process has a console attached to it, it will be detached and no longer visible. Writing to the System.Console is still possible, but no output will be shown.
+            </summary>
+        </member>
+        <member name="M:temTek.ConsoleWindow.Toggle">
+            <summary>
+            Hides or shows window
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekObject`1">
+            <summary>
+            Basic Object
+            </summary>
+            <typeparam name="type"></typeparam>
+        </member>
+        <member name="M:temTek.TemTekObject`1.Compare(`0[],`0[])">
+            <summary>
+            Equals two Arrays, returns true if values are same => You may implement IClasscode
+            </summary>
+            <param name="arr1"></param>
+            <param name="arr2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.TemTekObject`1.UltimateEquals(System.Object,System.Object)">
+            <summary>
+            Equals every possible way => You may implement IClasscode
+            </summary>
+            <param name="obj1"></param>
+            <param name="obj2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.TemTekObject`1.GetType">
+            <summary>
+            Returns type of object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:temTek.IClasscode">
+            <summary>
+            Interface for Equals
+            </summary>
+        </member>
+        <member name="M:temTek.IClasscode.GetClassCode">
+            <summary>
+            Put all values into it
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:temTek.TemTekAddons">
+            <summary>
+            Addons for everything
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekAddons.RemoveBlank(System.String[])">
+            <summary>
+            Removes empty values in string array
+            </summary>
+            <param name="array">Input array</param>
+            <returns>Trimmed array</returns>
+        </member>
+        <member name="M:temTek.TemTekAddons.GetpublicIP">
+            <summary>
+            Returns your IP adress
+            </summary>
+            <returns>Returns IP adress in string</returns>
+        </member>
+        <member name="M:temTek.TemTekAddons.ToSHA(System.String)">
+            <summary>
+            Hashes string
+            </summary>
+            <param name="input">String to Hash</param>
+            <returns>Returns hashed string</returns>
+        </member>
+        <member name="M:temTek.TemTekAddons.ToByteArrayWithoutEncoding(System.String)">
+            <summary>
+            Creates byte array from string without ENCODING
+            </summary>
+            <param name="str">Input</param>
+            <returns>Byte array of data</returns>
+        </member>
+        <member name="M:temTek.TemTekAddons.ToStringWithoutEncoding(System.Byte[])">
+            <summary>
+            Creates string from byte array WITHOUT ENCODING
+            </summary>
+            <param name="bytes">Bytes to change</param>
+            <returns>String from bytes</returns>
+        </member>
+        <member name="M:temTek.TemTekAddons.ToByteArrayWithEncoding(System.String)">
+            <summary>
+            Creates byte array from string with ENCODING
+            </summary>
+            <param name="str">Input</param>
+            <returns>Byte array of data</returns>
+        </member>
+        <member name="M:temTek.TemTekAddons.ToStringWithEncoding(System.Byte[])">
+            <summary>
+            Creates string from byte array WITH ENCODING
+            </summary>
+            <param name="bytes">Bytes to change</param>
+            <returns>String from bytes</returns>
+        </member>
+        <member name="M:temTek.TemTekAddons.Encrypt(System.String,temTek.TemtekCryptographing)">
+            <summary>
+            Encrypts string
+            </summary>
+            <param name="input">String to encrypt</param>
+            <param name="instance">Instance of TemtekCryptographing</param>
+            <returns>Returns encrypted string</returns>
+        </member>
+        <member name="M:temTek.TemTekAddons.Decrypt(System.String,temTek.TemtekCryptographing)">
+            <summary>
+            Decrypts string
+            </summary>
+            <param name="input">String to decrypt</param>
+            <param name="instance">Instance of TemtekCryptographing</param>
+            <returns>Returns decrypted string</returns>
+        </member>
+        <member name="T:temTek.TemtekCryptographing">
+            <summary>
+            Cryptograhing in AES
+            </summary>
+        </member>
+        <member name="M:temTek.TemtekCryptographing.#ctor(System.String,System.String)">
+            <summary>
+            Creates Encryption with key and salt
+            </summary>
+            <param name="key">Keyt</param>
+            <param name="salt">Salt</param>
+        </member>
+        <member name="M:temTek.TemtekCryptographing.Sifrovat(System.String)">
+            <summary>
+            Encrypts string input
+            </summary>
+            <param name="input">Input to encrypt</param>
+            <returns>Returns encrpyted string</returns>
+        </member>
+        <member name="M:temTek.TemtekCryptographing.Desifrovat(System.String)">
+            <summary>
+            Decrypts string input
+            </summary>
+            <param name="input">Input to decrypt</param>
+            <returns>Returns decrypted string, if fails, returns input string</returns>
+        </member>
+        <member name="T:temTek.TemTekNetwork">
+            <summary>
+            Network addons (WIP - Still in work)
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.IsNetworkWorking(System.Int32)">
+            <summary>
+            Returns true if network is working
+            </summary>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.GetMyPing(System.Int32)">
+            <summary>
+            Returns ping
+            </summary>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.GetMyPing(System.String,System.Int32)">
+            <summary>
+            Returns ping to some website
+            </summary>
+            <param name="IPadressOrHostname">Adress for pinging</param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP">
+            <summary>
+            Creates connection using FTP protocol
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.Finalize">
+            <summary>
+            Destructor
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.#ctor(System.Net.IPAddress,System.String,System.String,System.Int32)">
+            <summary>
+            Connects to FTP server
+            </summary>
+            <param name="host">Host to connect => IPAdress => Like 245.158.120.230</param>
+            <param name="user">Username</param>
+            <param name="psw">Password</param>
+            <param name="port">Use for custom port</param>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.#ctor(System.Uri,System.String,System.String,System.Int32)">
+            <summary>
+            Connects to FTP server
+            </summary>
+            <param name="host">Host to connect => URI => Like google.com or ftp://google.com/ </param>
+            <param name="user">Username</param>
+            <param name="psw">Password</param>
+            <param name="port">Use for custom port</param>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.#ctor(System.Net.IPAddress,System.String,System.Int32)">
+            <summary>
+            Connects to FTP server
+            </summary>
+            <param name="host">Host to connect => IPAdress => Like 245.158.120.230</param>
+            <param name="user">Username</param>
+            <param name="port">Use for custom port</param>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.#ctor(System.Uri,System.String,System.Int32)">
+            <summary>
+            Connects to FTP server
+            </summary>
+            <param name="host">Host to connect => URI => Like google.com or ftp://google.com/ </param>
+            <param name="user">Username</param>
+            <param name="port">Use for custom port</param>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.DownloadFile(System.String,System.String)">
+            <summary>
+            Downloads File from FTP
+            </summary>
+            <param name="remoteFile">File for downloading</param>
+            <param name="destinationFile">Target where will be file saved</param>
+            <returns>False if file is not existing or server denied connection</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.DownloadData(System.String)">
+            <summary>
+            Downloads File data
+            </summary>
+            <param name="remoteFile">File for download</param>
+            <returns>Byte Array of file data or returns NULL if file is not existing or server denied connection. WARNING => Data to download can be max 700 MB big on 32 bit.</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.UploadFile(System.String,System.String)">
+            <summary>
+            Uploads file into FTP server
+            </summary>
+            <param name="localFile">File for uploading</param>
+            <param name="remoteTargetFile">Path where file may be saved => localfile = .../Desktop/hi.txt => targetfile = /hi.txt or /folder/hi.txt</param>
+            <returns>Returns false if you dont have rights or server denied connection or if local file isn't existing</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.UploadData(System.Byte[],System.String)">
+            <summary>
+            Uploads byte[] of data to FTP
+            </summary>
+            <param name="data">Data for upload</param>
+            <param name="remoteTargetFile">Path where file may be saved => /hi.txt or /folder/hi.txt</param>
+            <returns>Returns false if you dont have rights or server denied connection or if byte[] is empty.</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.DeleteFile(System.String)">
+            <summary>
+            Removes file from FTP server
+            </summary>
+            <param name="remoteTargetFile">File for removing => /hi.txt or /folder/hi.txt</param>
+            <returns>Returns false if you dont have rights or server denied connection or file isn't existing</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.RenameFile(System.String,System.String)">
+            <summary>
+            Renames file on FTP server
+            </summary>
+            <param name="currentFileNameWithPath">Path to file => /hi.txt or /folder/hi.txt</param>
+            <param name="newFileNameWithoutPath">New name for file => hello.txt or love.accsb </param>
+            <returns>Returns false if you dont have rights or server denied connection or file isn't existing or if file exists with target name</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.CreateDirectory(System.String)">
+            <summary>
+            Creates directory in FTP server
+            </summary>
+            <param name="pathToNewDirectory">Path for creating directory => Like /folder/ or /otherFolder/folder/ </param>
+            <returns>Returns false if you dont have rights or server denied connection or if Directory with same name is existing</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.GetFileCreationDateTime(System.String)">
+            <summary>
+            Gets file creation time and date in DATETIME kind
+            </summary>
+            <param name="pathToFile">Path to file => /hello.txt or /folder/love.asdf </param>
+            <returns>Returns DateTime with file creation time or returns default datetime if server doesnt support operation or server denied access</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.GetFileSizeInBytes(System.String)">
+            <summary>
+            Gets file size in bytes
+            </summary>
+            <param name="pathToFile">Path to file for size</param>
+            <returns>Returns ulong with file size</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.GetFilesInDirectory(System.String)">
+            <summary>
+            Gets name of all files in Directory on FTP server
+            </summary>
+            <param name="pathToDirectory">Path where you want search for files</param>
+            <returns>Returns string array of names of files. Returns null if server denied connection or folder isnt existing</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.GetDirectoriesInDirectory(System.String)">
+            <summary>
+            Gets name of all directories in Directory on FTP server
+            </summary>
+            <param name="pathToDirectory">Path where you want search for directories</param>
+            <returns>Returns string array of names of directories. Returns null if server denied connection or folder isnt existing</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.GetDirectoriesAndFilesInDirectory(System.String)">
+            <summary>
+            Gets name of everything in Directory on FTP server
+            </summary>
+            <param name="pathToDirectory">Path where you want search for everything</param>
+            <returns>Returns string array of names of files and directories. Returns null if server denied connection or folder isnt existing</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.GetDirectoriesAndFilesInDirectoryDetailed(System.String)">
+            <summary>
+            Gets all files and Directories with detailed information.
+            </summary>
+            <param name="pathToDirectory">Path where you want search for everything</param>
+            <returns>Returns special class with information about file or directory</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.GetDirectoriesInDirectoryDetailed(System.String)">
+            <summary>
+            Gets all Directories with detailed information.
+            </summary>
+            <param name="pathToDirectory">Path where you want search for directories</param>
+            <returns>Returns special class with information about file or directory</returns>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.GetFilesInDirectoryDetailed(System.String)">
+            <summary>
+            Gets all files with detailed information.
+            </summary>
+            <param name="pathToDirectory">Path where you want search for files</param>
+            <returns>Returns special class with information about file or directory</returns>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation">
+            <summary>
+            Information about File or Directory
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.typeOf">
+            <summary>
+            Directory or File?
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.name">
+            <summary>
+            Name of File or Directory
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permissionUser">
+            <summary>
+            Permissions for User
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permissionGroup">
+            <summary>
+            Permissions for Group
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permissionOther">
+            <summary>
+            Permissions for Other
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.path">
+            <summary>
+            Path to File or Directory
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.host">
+            <summary>
+            IP or Domain of host where is File or Directory saved
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.timeOfCreation">
+            <summary>
+            Time of creation File or Directory
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.owner">
+            <summary>
+            Owner of Directory or File
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.groupOwner">
+            <summary>
+            Group of Directory or File
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.size">
+            <summary>
+            Size of File or 0 for Directory
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.numberOfLinks">
+            <summary>
+            Number of accesible links, ussualy 1
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.type">
+            <summary>
+            Directory or File?
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.type.Directory">
+            <summary>
+            Directory
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.type.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permission">
+            <summary>
+            Permissions for files or Directories
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permission.Read">
+            <summary>
+            File can be viewed or printed or Directory contents can be read, but not searched.
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permission.Write">
+            <summary>
+            File contents can be changed or deleted or Directory entries can be added or removed
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permission.Execute">
+            <summary>
+            File can be used as a program or Directory can be searched
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permission.ReadWrite">
+            <summary>
+            File can be viewed or printed or Directory contents can be read, but not searched and File contents can be changed or deleted or Directory entries can be added or removed
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permission.ReadExecute">
+            <summary>
+            File can be viewed or printed or Directory contents can be read, but not searched and File can be used as a program or Directory can be searched
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permission.ReadWriteExecute">
+            <summary>
+            You can do anything to File or Directory
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekNetwork.FTP.FileOrDirectoryInformation.permission.WriteExecute">
+            <summary>
+            File contents can be changed or deleted or Directory entries can be added or removed and File can be used as a program or Directory can be searched
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.DownloadFileAsync">
+            <summary>
+            Downloads File from FTP async
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.DownloadFileAsync.progress">
+            <summary>
+            Returns actual progress
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.DownloadFileAsync.CompletedEventHandler">
+            <summary>
+            Handler for Completed Event => returns bool
+            </summary>
+        </member>
+        <member name="E:temTek.TemTekNetwork.FTP.DownloadFileAsync.CompletedEvent">
+            <summary>
+            Event is called after download is completed or failed
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.DownloadFileAsync.ProgressChangedEventHandler">
+            <summary>
+            Handler for Progress Changed Event => ushort with progress in %
+            </summary>
+        </member>
+        <member name="E:temTek.TemTekNetwork.FTP.DownloadFileAsync.ProgressChanged">
+            <summary>
+            Calls every time progress changes, result in %
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.DownloadFileAsync.#ctor(System.String,System.String)">
+            <summary>
+            Downloads File from FTP ASYNC
+            </summary>
+            <param name="remoteFile">File for downloading</param>
+            <param name="destinationFile">Target where will be file saved</param>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.DownloadFileAsync.StartDownload">
+            <summary>
+            Starts Downloading
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.DownloadFileAsync.StopDownload">
+            <summary>
+            Terminates download and removes downloaded file
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.DownloadDataAsync">
+            <summary>
+            Downloads Data from FTP async
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.DownloadDataAsync.progress">
+            <summary>
+            Returns actual progress
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.DownloadDataAsync.CompletedEventHandler">
+            <summary>
+            Handler for Completed Event => returns byte[]
+            </summary>
+        </member>
+        <member name="E:temTek.TemTekNetwork.FTP.DownloadDataAsync.CompletedEvent">
+            <summary>
+            Event is called after download is completed or failed
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.DownloadDataAsync.ProgressChangedEventHandler">
+            <summary>
+            Handler for Progress Changed Event => ushort with progress in %
+            </summary>
+        </member>
+        <member name="E:temTek.TemTekNetwork.FTP.DownloadDataAsync.ProgressChanged">
+            <summary>
+            Calls every time progress changes, result in %
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.DownloadDataAsync.#ctor(System.String)">
+            <summary>
+            Downloads File data ASYNC
+            </summary>
+            <param name="remoteFile">File for download</param>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.DownloadDataAsync.StartDownload">
+            <summary>
+            Starts Downloading
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.DownloadDataAsync.StopDownload">
+            <summary>
+            Stops Downloading
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.UploadDataAsync">
+            <summary>
+            Uploads data to FTP asnyc
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.UploadDataAsync.progress">
+            <summary>
+            Returns actual progress
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.UploadDataAsync.CompletedEventHandler">
+            <summary>
+            Handler for Completed Event => returns bool
+            </summary>
+        </member>
+        <member name="E:temTek.TemTekNetwork.FTP.UploadDataAsync.CompletedEvent">
+            <summary>
+            Event is called after upload is completed or failed
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.UploadDataAsync.ProgressChangedEventHandler">
+            <summary>
+            Handler for Progress Changed Event => ushort with progress in %
+            </summary>
+        </member>
+        <member name="E:temTek.TemTekNetwork.FTP.UploadDataAsync.ProgressChanged">
+            <summary>
+            Calls every time progress changes, result in %
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.UploadDataAsync.#ctor(System.Byte[],System.String)">
+            <summary>
+            Uploads byte[] of data to FTP ASYNC
+            </summary>
+            <param name="data">Data for upload</param>
+            <param name="remoteTargetFile">Path where file may be saved => /hi.txt or /folder/hi.txt</param>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.UploadDataAsync.StartUpload">
+            <summary>
+            Starts Uploading
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.UploadDataAsync.StopUpload">
+            <summary>
+            Stops upload and removes file from FTP
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.UploadFileAsync">
+            <summary>
+            Uploads file to FTP async
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekNetwork.FTP.UploadFileAsync.progress">
+            <summary>
+            Returns actual progress
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.UploadFileAsync.CompletedEventHandler">
+            <summary>
+            Handler for Completed Event => returns bool
+            </summary>
+        </member>
+        <member name="E:temTek.TemTekNetwork.FTP.UploadFileAsync.CompletedEvent">
+            <summary>
+            Event is called after upload is completed or failed
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekNetwork.FTP.UploadFileAsync.ProgressChangedEventHandler">
+            <summary>
+            Handler for Progress Changed Event => ushort with progress in %
+            </summary>
+        </member>
+        <member name="E:temTek.TemTekNetwork.FTP.UploadFileAsync.ProgressChanged">
+            <summary>
+            Calls every time progress changes, result in %
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.UploadFileAsync.#ctor(System.String,System.String)">
+            <summary>
+            Uploads file into FTP server ASYNC
+            </summary>
+            <param name="localFile">File for uploading</param>
+            <param name="remoteTargetFile">Path where file may be saved => localfile = .../Desktop/hi.txt => targetfile = /hi.txt or /folder/hi.txt</param>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.UploadFileAsync.StartUpload">
+            <summary>
+            Starts Uploading
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekNetwork.FTP.UploadFileAsync.StopUpload">
+            <summary>
+            Stops upload and removes file from FTP
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekLanguage">
+            <summary>
+            Provides language System
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekLanguage.SetValue(System.String,System.String,System.String)">
+            <summary>
+            Sets value into Language system
+            </summary>
+            <param name="englishValue">Key for searching</param>
+            <param name="value">Value in specific languange</param>
+            <param name="locale">Locale in "en-GB" or "en-US" type</param>
+        </member>
+        <member name="M:temTek.TemTekLanguage.SetValue(System.String,System.String,System.Globalization.CultureInfo)">
+            <summary>
+            Sets value into Language system
+            </summary>
+            <param name="englishValue">Key for searching</param>
+            <param name="value">Value in specific languange</param>
+            <param name="locale">Locale in CultureInfo type</param>
+        </member>
+        <member name="M:temTek.TemTekLanguage.GetValue(System.String,System.String)">
+            <summary>
+            Returns string with required value
+            </summary>
+            <param name="englishValue">Key for search</param>
+            <param name="locale">Language for search in "en-US" or "en-GB" format</param>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.TemTekLanguage.GetValue(System.String,System.Globalization.CultureInfo)">
+            <summary>
+            Returns string with required value
+            </summary>
+            <param name="englishValue">Key for search</param>
+            <param name="locale">Language for search in CultureInfo format</param>
+        </member>
+        <member name="T:temTek.TemTekIO">
+            <summary>
+            Provides IO System
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekIO.File">
+            <summary>
+            Provides Normalized File value, but can just normalize string or uri
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekIO.File.#ctor(System.String)">
+            <summary>
+            Normalizes File
+            </summary>
+            <param name="filePath">Path to normalize</param>
+        </member>
+        <member name="M:temTek.TemTekIO.File.ToString">
+            <summary>
+            Returns string
+            </summary>
+            <returns>String</returns>
+        </member>
+        <member name="M:temTek.TemTekIO.File.NormalizeFileUri(System.String)">
+            <summary>
+            Normalizes File Path
+            </summary>
+            <param name="filePath">FIle to normalize</param>
+            <returns>Returns normalized string</returns>
+        </member>
+        <member name="P:temTek.TemTekIO.File.Exists">
+            <summary>
+            Checks if file exists
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekIO.TemTekLog">
+            <summary>
+            Provides logging support
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekLog.#ctor(temTek.TemTekIO.File)">
+            <summary>
+            Creates log
+            </summary>
+            <param name="path">Path to file</param>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekLog.#ctor(System.String)">
+            <summary>
+            Creates log
+            </summary>
+            <param name="path">Path to file</param>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekLog.Log(System.String,System.Boolean)">
+            <summary>
+            Logs message
+            </summary>
+            <param name="logText">Message to log</param>
+            <param name="useTime">May message contain Date and Time?</param>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekLog.LogWarning(System.String,System.Boolean)">
+            <summary>
+            Logs warning message
+            </summary>
+            <param name="logText">Message to log</param>
+            <param name="useTime">May message contain Date and Time?</param>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekLog.LogError(System.String,System.Boolean)">
+            <summary>
+            Logs error message
+            </summary>
+            <param name="logText">Message to log</param>
+            <param name="useTime">May message contain Date and Time?</param>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekLog.LoadLog">
+            <summary>
+            Loads history of logs
+            </summary>
+            <returns>String array of logs</returns>
+        </member>
+        <member name="T:temTek.TemTekIO.TemTekConfig">
+            <summary>
+            Provides config support
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekConfig.#ctor(temTek.TemTekIO.File)">
+            <summary>
+            Prepares configuration file
+            </summary>
+            <param name="path">Path to file (like C:\asdf\config.txt)</param>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekConfig.#ctor(System.String)">
+            <summary>
+            Prepares configuration file
+            </summary>
+            <param name="path">Path to file (like C:\asdf\config.txt)</param>
+        </member>
+        <member name="P:temTek.TemTekIO.TemTekConfig.autoFlush">
+            <summary>
+            May autoflush?
+            </summary>
+            <seealso cref="M:temTek.TemTekIO.TemTekConfig.Flush"/>
+        </member>
+        <member name="P:temTek.TemTekIO.TemTekConfig.Item(System.String)">
+            <summary>
+            Reads or writes value from config
+            </summary>
+            <param name="index">Name of value you want read or write (like "username")</param>
+            <returns>Returns value by index</returns>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekConfig.Flush">
+            <summary>
+            Flushes data into file
+            </summary>
+            <seealso cref="P:temTek.TemTekIO.TemTekConfig.autoFlush"/>
+        </member>
+        <member name="M:temTek.TemTekIO.TemTekConfig.Close">
+            <summary>
+            Closes streams
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekIO.MultiReader">
+            <summary>
+            Provides support for multiple operations on stream
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.#ctor(System.IO.Stream)">
+            <summary>
+            Creates multireader with Stream source (WARNING, use only stream what supports read and write at once!)
+            </summary>
+            <param name="source">Stream to use</param>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.#ctor(System.String)">
+            <summary>
+            Creates multireader with file
+            </summary>
+            <param name="path">File to read</param>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.#ctor(temTek.TemTekIO.File)">
+            <summary>
+            Creates mutlireader with file
+            </summary>
+            <param name="File">File to read</param>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.#ctor(System.String,System.Boolean)">
+            <summary>
+            Creates multireader with file and append possibility
+            </summary>
+            <param name="path">File to read</param>
+            <param name="append">Append file?</param>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.#ctor(temTek.TemTekIO.File,System.Boolean)">
+            <summary>
+            Creates multireader with file and append possibility
+            </summary>
+            <param name="File">File to read</param>
+            <param name="append">Append file?</param>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.Read">
+            <summary>
+            Reads one byte
+            </summary>
+            <returns>Returns byte</returns>
+        </member>
+        <member name="P:temTek.TemTekIO.MultiReader.Count">
+            <summary>
+            Returns number of lines
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekIO.MultiReader.ReaderEndOfStream">
+            <summary>
+            Are we on end of stream?
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.Close">
+            <summary>
+            Closes streams
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.Read(System.Char[],System.Int32,System.Int32)">
+            <summary>
+            Reads byte
+            </summary>
+            <param name="buffer">Buffer where to save</param>
+            <param name="index">Index</param>
+            <param name="count">Count</param>
+            <returns>Byte</returns>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.ReadBlock(System.Char[],System.Int32,System.Int32)">
+            <summary>
+            Reads block 
+            </summary>
+            <param name="buffer">Buffer where to save</param>
+            <param name="index">Index</param>
+            <param name="count">Count</param>
+            <returns></returns>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.ReadLine">
+            <summary>
+            Reads line from stream
+            </summary>
+            <returns>Line</returns>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.ReadToEnd">
+            <summary>
+            Reads all file or stream
+            </summary>
+            <returns>All file or stream in string</returns>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.ResetReader">
+            <summary>
+            Resets reader to default values
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.ResetWriter">
+            <summary>
+            Resets writer to default values
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.Write(System.Object)">
+            <summary>
+            Writes object (string, etc) into stream or file
+            </summary>
+            <param name="value">Object to write</param>
+            <seealso cref="M:temTek.TemTekIO.MultiReader.WriteLine(System.Object)"/>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.Write(System.Char[],System.Int32,System.Int32)">
+            <summary>
+            Writes object (string, etc) into stream or file
+            </summary>
+            <param name="buffer">Buffer to write</param>
+            <param name="index">Index</param>
+            <param name="count">Count</param>
+            <seealso cref="M:temTek.TemTekIO.MultiReader.WriteLine(System.Char[],System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.WriteLine(System.Object)">
+            <summary>
+            Writes object (string, etc) into stream or file and creates new line
+            </summary>
+            <param name="value">Object to write</param>
+            <seealso cref="M:temTek.TemTekIO.MultiReader.Write(System.Object)"/>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.WriteLine(System.Char[],System.Int32,System.Int32)">
+            <summary>
+            Writes object (string, etc) into stream or file and creates new line
+            </summary>
+            <param name="buffer">Buffer to write</param>
+            <param name="index">Index</param>
+            <param name="count">Count</param>
+            <seealso cref="M:temTek.TemTekIO.MultiReader.Write(System.Char[],System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.WriteLine">
+            <summary>
+            Writes new line
+            </summary>
+            <seealso cref="M:temTek.TemTekIO.MultiReader.WriteLine(System.Char[],System.Int32,System.Int32)"/>
+            <seealso cref="M:temTek.TemTekIO.MultiReader.WriteLine(System.Object)"/>
+        </member>
+        <member name="P:temTek.TemTekIO.MultiReader.AutoFlush">
+            <summary>
+            Automatically flushes file
+            </summary>
+            <seealso cref="M:temTek.TemTekIO.MultiReader.Flush"/>
+        </member>
+        <member name="M:temTek.TemTekIO.MultiReader.Flush">
+            <summary>
+            Flushes file
+            </summary>
+            <seealso cref="P:temTek.TemTekIO.MultiReader.AutoFlush"/>
+        </member>
+        <member name="T:temTek.TemTekExceptions">
+            <summary>
+            Class for exceptions
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekExceptions.NotJsonException">
+            <summary>
+            Throwed when file isn't valid JSON file
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekExceptions.NotValidFilePathException">
+            <summary>
+            Throwed when file path isn't valid
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekSystem">
+            <summary>
+            Provides system informations
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekSystem.OSInfo">
+            <summary>
+            Provides basic OS informations
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekSystem.OSInfo.bits">
+            <summary>
+            32 bit or 64 bit operating system?
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekSystem.OSInfo.bits.x32">
+            <summary>
+            32 bit operating system
+            </summary>
+        </member>
+        <member name="F:temTek.TemTekSystem.OSInfo.bits.x64">
+            <summary>
+            64 bit operating system
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.OSInfo.GetOSArchitecture">
+            <summary>
+            Gets information from system if system is x32 or x64 architecture
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.OSInfo.GetOSFullName">
+            <summary>
+            Returns nice OS name, like "Windows 7" or "Windows Server 2008"
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.OSInfo.GetOSName">
+            <summary>
+            Returns short OS Name, like "Windows NT 6.2.9200.0"
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.OSInfo.GetOSVersion">
+            <summary>
+            Returns version of windows
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.OSInfo.GetOSVersionDetailed">
+            <summary>
+            Returns class Version with version informations
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.OSInfo.GetOSServicePack">
+            <summary>
+            Returns service pack installed on system or null if none
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.OSInfo.GetOSPlatform">
+            <summary>
+            Returns platform of system
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekSystem.CPUInfo">
+            <summary>
+            Provides basic CPU informations
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.CPUInfo.GetActualClockSpeed">
+            <summary>
+            Returns ACTUAL clock speed of CPU
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.CPUInfo.GetMaxClockSpeed">
+            <summary>
+            Returns MAX clock speed of CPU
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.CPUInfo.GetManafacturer">
+            <summary>
+            Retrns Manafucturer name, like "Intel"
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.CPUInfo.GetDescription">
+            <summary>
+            Returns CPU Description
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.CPUInfo.GetName">
+            <summary>
+            Returns CPU Name
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.CPUInfo.NumberOfCores">
+            <summary>
+            Returns number of cores in CPU
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekSystem.RAMInfo">
+            <summary>
+            Provides basic RAM informations
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.RAMInfo.TotalMemory">
+            <summary>
+            Returns total RAM in bytes
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.RAMInfo.FreeMemory">
+            <summary>
+            Returns free RAM in bytes
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.RAMInfo.UsedMemory">
+            <summary>
+            Returns used RAM in bytes
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekSystem.GPUInfo">
+            <summary>
+            Provides basic GPU informations
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.GPUInfo.Description">
+            <summary>
+            Gpu description
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.GPUInfo.Name">
+            <summary>
+            Gpu name
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.GPUInfo.VideoProcessor">
+            <summary>
+            Gpu Video Proccesor
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.GPUInfo.DriverVersion">
+            <summary>
+            Gpu driver version
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.GPUInfo.CurrentRefreshRate">
+            <summary>
+            Gpu refresh rate
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.GPUInfo.CurrentHorizontalResolution">
+            <summary>
+            Gpu horizontal resolution
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.GPUInfo.CurrentVerticalResolution">
+            <summary>
+            Gpu vertical resolution
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.GPUInfo.VideoArchitecture">
+            <summary>
+            Gpu video architecture
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.GPUInfo.NumberOfVideoPages">
+            <summary>
+            Number of video pages
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekSystem.DriveInfo">
+            <summary>
+            Provides basic HDD/SDD/Floppy ROM/DVD ROM/Network ROM informations
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekSystem.DriveInfo.#ctor(System.String)">
+            <summary>
+            Constructor for Drive Informations
+            </summary>
+            <param name="label">Name of drive, like "C:/" or "C:" or "C" </param>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.GetType">
+            <summary>
+            Returns type of drive
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.FreeSpace">
+            <summary>
+            Returns free space on drive
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.TotalSpace">
+            <summary>
+            Returns total space on drive
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.UsedSpace">
+            <summary>
+            Returns used space on drive
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.GetFormat">
+            <summary>
+            Returns format of drive
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.GetLabel">
+            <summary>
+            Returns label of drive
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.GetSystemName">
+            <summary>
+            Returns system name of drive
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.RootDirectory">
+            <summary>
+            Returns root directory path
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.GetName">
+            <summary>
+            Returns name of drive
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.GetModel">
+            <summary>
+            Returns model name
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.GetNumberOfPartitions">
+            <summary>
+            Returns number of partitions
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.GetManafacturer">
+            <summary>
+            Returns manafacturer's name
+            </summary>
+        </member>
+        <member name="P:temTek.TemTekSystem.DriveInfo.GetDescription">
+            <summary>
+            Returns description of drive
+            </summary>
+        </member>
+        <member name="T:temTek.TemTekMath">
+            <summary>
+            Provides system for mathematical operations
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekMath.Random(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Generates random number
+            </summary>
+            <param name="seed">Seed for generating</param>
+            <param name="minValue">Min value for generating</param>
+            <param name="maxValue">Max value for generating</param>
+            <returns></returns>
+        </member>
+        <member name="T:temTek.TemTekExtension">
+            <summary>
+            Provides extension methods
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekExtension.ToSMA(System.Int32[])">
+            <summary>
+            Smoothes Graph
+            </summary>
+            <param name="input">Graph to clear</param>
+            <returns>Returns upgraded graph</returns>
+        </member>
+        <member name="M:temTek.TemTekExtension.Avg(System.Int32[])">
+            <summary>
+            Average
+            </summary>
+            <param name="input">Numbers for creating average</param>
+            <returns>Returns average number</returns>
+        </member>
+        <member name="M:temTek.TemTekExtension.Avg(System.Double[])">
+            <summary>
+            Average
+            </summary>
+            <param name="input">Numbers for creating average</param>
+            <returns>Returns average number</returns>
+        </member>
+        <member name="M:temTek.TemTekExtension.Avg(System.Decimal[])">
+            <summary>
+            Average
+            </summary>
+            <param name="input">Numbers for creating average</param>
+            <returns>Returns average number</returns>
+        </member>
+        <member name="M:temTek.TemTekExtension.Avg(System.Single[])">
+            <summary>
+            Average
+            </summary>
+            <param name="input">Numbers for creating average</param>
+            <returns>Returns average number</returns>
+        </member>
+        <member name="T:temTek.TemTekTypes.OverLoadingArray`1">
+            <summary>
+            Array what can be overloaded by accessing it
+            </summary>
+            <typeparam name="type">Type of array</typeparam>
+        </member>
+        <member name="F:temTek.TemTekTypes.OverLoadingArray`1.array">
+            <summary>
+            Internal array
+            </summary>
+        </member>
+        <member name="M:temTek.TemTekTypes.OverLoadingArray`1.#ctor(System.Int32)">
+            <summary>
+            Creates array with some size
+            </summary>
+            <seealso cref="T:System.Array"/>
+            <param name="size">Size to create</param>
+        </member>
+        <member name="P:temTek.TemTekTypes.OverLoadingArray`1.Item(System.Int32)">
+            <summary>
+            Allows you set or get item in array by index. WARNING: OVERLOADS (Like array with size of 3, index 5 => final index 1 OR array with size of 3, index -1 => final index 2)!!!
+            </summary>
+            <param name="index">Index of item to set/get</param>
+            <returns>Value of item on index</returns>
+        </member>
+        <member name="M:temTek.TemTekTypes.OverLoadingArray`1.GetEnumerator">
+            <summary>
+            Returns enumerator of internal array
+            </summary>
+            <returns>Enumerator</returns>
+        </member>
+        <member name="M:temTek.TemTekTypes.OverLoadingArray`1.Clone">
+            <summary>
+            Clones array
+            </summary>
+            <returns>Cloned array</returns>
+        </member>
+        <member name="M:temTek.TemTekTypes.OverLoadingArray`1.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>Return string (Like => { 0, 5, 6, 7 } )</returns>
+        </member>
+        <member name="M:temTek.TemTekTypes.OverLoadingArray`1.op_Implicit(`0[])~temTek.TemTekTypes.OverLoadingArray{`0}">
+            <summary>
+            Creates Overloading Array
+            </summary>
+            <param name="array">Array to create Overloading Array from</param>
+        </member>
+        <member name="M:temTek.TemTekTypes.OverLoadingArray`1.op_Explicit(temTek.TemTekTypes.OverLoadingArray{`0})~`0[]">
+            <summary>
+            Gets array from Overloading array
+            </summary>
+            <param name="array">Overloading array</param>
+        </member>
+    </members>
+</doc>
